@@ -1,0 +1,11 @@
+baseurl: https://www.lieverdeleven.nl
+title: Liever de leven
+theme: ananke
+uglyURLs: true
+
+defaultContentLanguage: nl
+
+taxonomies:
+  type: types
+
+SectionPagesMenu: main
