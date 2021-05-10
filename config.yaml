@@ -1,11 +1,23 @@
-baseurl: https://www.lieverdeleven.nl
-title: Liever de leven
-theme: ananke
+baseurl: https://nomnoms.gweggemans.nl
+languageCode: nl-nl
+title: Nomnoms
+theme: parsa
 uglyURLs: true
 
 defaultContentLanguage: nl
 
 taxonomies:
-  type: types
+  ingredient: ingredienten
 
 SectionPagesMenu: main
+
+params:
+  layout: "2"
+  home: ""
+
+  plugins:
+    js:
+      - link: plugins/jQuery/jquery.min.js
+      - link: plugins/bootstrap/bootstrap.min.js
+      - link: plugins/slick/slick.min.js
+      - link: plugins/headroom/headroom.js

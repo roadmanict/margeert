@@ -42,3 +42,5 @@ tags
 .DS_Store
 .idea/
 bin/
+diff-template.patch
+s3-bucket
