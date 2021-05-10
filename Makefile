@@ -1,15 +1,20 @@
-.PHONY: update-submodules publish
+.PHONY: init-submodules update-submodules publish diff-template
 
-S3_BUCKET=`cat ./s3-bucket`
+include .env
+
 DIFF_TEMPLATE_FILE=diff-template.patch
+
+init-submodules:
+	git submodule init
 
 update-submodules:
 	git submodule update --remote --merge
 
 publish:
+	export $(shell sed 's/=.*//' .env)
 	rm -rf ./public/
 	hugo --minify --environment production
-	aws s3 sync ./public s3://${S3_BUCKET}
+	aws s3 sync ./public s3://${S3_BUCKET_NAME}
 
 diff-template:
 	rm ${DIFF_TEMPLATE_FILE}

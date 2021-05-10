@@ -43,4 +43,4 @@ tags
 .idea/
 bin/
 diff-template.patch
-s3-bucket
+.env
