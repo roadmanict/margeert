@@ -1,23 +1,20 @@
-baseurl: https://nomnoms.gweggemans.nl
+baseurl: https://www.nomnomz.nl
 languageCode: nl-nl
-title: Nomnoms
-theme: parsa
+title: Nomnomz.nl
+theme: ananke
 uglyURLs: true
-
+enableRobotsTXT: true
+copywrite: Geert & Margot
 defaultContentLanguage: nl
+
+sectionPagesMenu: "main"
 
 taxonomies:
   ingredient: ingredienten
 
-SectionPagesMenu: main
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 
-params:
-  layout: "2"
-  home: ""
-
-  plugins:
-    js:
-      - link: plugins/jQuery/jquery.min.js
-      - link: plugins/bootstrap/bootstrap.min.js
-      - link: plugins/slick/slick.min.js
-      - link: plugins/headroom/headroom.js
+params: {}

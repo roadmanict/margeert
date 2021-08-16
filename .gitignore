@@ -44,3 +44,5 @@ tags
 bin/
 diff-template.patch
 .env
+node_modules/
+package-lock.json
