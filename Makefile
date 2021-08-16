@@ -13,10 +13,12 @@ update-submodules:
 serve:
 	hugo server
 
-publish:
-	export $(shell sed 's/=.*//' .env)
+dist:
 	rm -rf ./public/
 	hugo --minify --environment production
+
+publish: dist
+	export $(shell sed 's/=.*//' .env)
 	aws s3 sync ./public s3://${S3_BUCKET_NAME} --delete
 
 diff-template:

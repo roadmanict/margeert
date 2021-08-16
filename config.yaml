@@ -7,7 +7,16 @@ enableRobotsTXT: true
 copywrite: Geert & Margot
 defaultContentLanguage: nl
 
-sectionPagesMenu: "main"
+menu:
+  main:
+    - identifier: recepten
+      name: Recepten
+      url: /recepten.html
+      weight: 10
+    - identifier: ingredienten
+      name: Ingredienten
+      url: /ingredienten.html
+      weight: 20
 
 taxonomies:
   ingredient: ingredienten
